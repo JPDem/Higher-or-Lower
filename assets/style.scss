@@ -20,7 +20,7 @@ section {
   color: $textColor;
   h1 {
     @include flexCenter();
-    font-size: 1.5rem;
+    font-size: 2rem;
     height: 10vh;
   }
 }
@@ -69,10 +69,16 @@ section {
 
 //mobile friendly
 @media screen and (max-width: 768px) {
+  section {
+    h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 3rem;
+    }
+  }
   .scoreboard {
-    height: 10vh;
-    font-size: 1rem;
-    margin: 5px;
+    height: 20vh;
+    font-size: 0.8rem;
   }
 
   .rules {
@@ -81,6 +87,7 @@ section {
   }
 
   .gameplay {
+    height: 60vh;
     button {
       padding: 15px;
       margin-top: 6px;
@@ -94,5 +101,12 @@ section {
     padding: 0;
 
     text-align: center;
+  }
+
+  .scoreboard {
+    .score {
+      font-size: 1.2rem;
+      padding: 0;
+    }
   }
 }
