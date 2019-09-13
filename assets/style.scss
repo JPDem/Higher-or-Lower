@@ -1,0 +1,67 @@
+$textColor: rgb(226, 226, 226);
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  background-color: rgb(59, 39, 68);
+  font-family: sans-serif;
+  color: $textColor;
+  h1 {
+    @include flexCenter();
+    font-size: 1.5rem;
+    height: 10vh;
+  }
+}
+
+.scoreboard {
+  @include flexCenter();
+  height: 20vh;
+  font-size: 2rem;
+  flex-direction: row;
+  .score {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 40px;
+  }
+}
+
+.gameplay {
+  @include flexCenter();
+  height: 50vh;
+  p {
+    font-size: 10rem;
+    border: 10px solid $textColor;
+    background: $textColor;
+    padding: 12px 20px;
+    border-radius: 7px;
+    color: rgb(194, 24, 24);
+    margin-bottom: 10px;
+  }
+  button {
+    background: none;
+    border: none;
+    background-color: rgb(78, 138, 98);
+    padding: 10px;
+    margin: 3px;
+    border-radius: 3px;
+    font-weight: 700;
+    color: $textColor;
+  }
+}
+
+.rules {
+  @include flexCenter();
+  height: 20vh;
+}
