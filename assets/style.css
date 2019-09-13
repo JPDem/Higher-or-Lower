@@ -113,14 +113,26 @@ section h1 {
 }
 
 @media screen and (max-width: 768px) {
+  .scoreboard {
+    height: 10vh;
+    font-size: 1rem;
+    margin: 5px;
+  }
   .rules {
-    height: 50vh;
+    position: relative;
+    top: 20vh;
   }
   .gameplay button {
-    padding: 20px;
+    padding: 15px;
     margin-top: 6px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 120px;
+  }
+  .rng-number p {
+    font-size: 6rem;
+    width: 130px;
+    padding: 0;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
