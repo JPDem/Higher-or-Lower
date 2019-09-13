@@ -10,11 +10,12 @@ $textColor: rgb(226, 226, 226);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(59, 39, 68);
 }
 
 section {
   height: 100vh;
-  background-color: rgb(59, 39, 68);
+
   font-family: sans-serif;
   color: $textColor;
   h1 {
@@ -64,4 +65,19 @@ section {
 .rules {
   @include flexCenter();
   height: 20vh;
+}
+
+//mobile friendly
+@media screen and (max-width: 768px) {
+  .rules {
+    height: 50vh;
+  }
+  .gameplay {
+    button {
+      padding: 20px;
+      margin-top: 6px;
+      font-size: 1.5rem;
+      width: 120px;
+    }
+  }
 }

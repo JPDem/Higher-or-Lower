@@ -3,11 +3,11 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #3b2744;
 }
 
 section {
   height: 100vh;
-  background-color: #3b2744;
   font-family: sans-serif;
   color: #e2e2e2;
 }
@@ -110,5 +110,17 @@ section h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 20vh;
+}
+
+@media screen and (max-width: 768px) {
+  .rules {
+    height: 50vh;
+  }
+  .gameplay button {
+    padding: 20px;
+    margin-top: 6px;
+    font-size: 1.5rem;
+    width: 120px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
