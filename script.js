@@ -1,5 +1,5 @@
 const game = () => {
-  let rng = Math.floor(Math.random() * 15);
+  let rng = Math.ceil(Math.random() * 15);
   let rngNumber = document.querySelector(".rng-number p");
   let prevNumber = document.querySelector(".rng-number p");
   let wScore = 0;
@@ -8,7 +8,7 @@ const game = () => {
   //RNG Number
   const total = () => {
     let storedNumber = prevNumber.textContent;
-    rng = Math.floor(Math.random() * 15);
+    rng = Math.ceil(Math.random() * 15);
     rngNumber.textContent = rng;
     if (storedNumber === "J") {
       storedNumber = 11;
@@ -63,7 +63,7 @@ const game = () => {
 
     const playingH = () => {
       let storedNumber = prevNumber.textContent;
-      rng = Math.floor(Math.random() * 15);
+      rng = Math.ceil(Math.random() * 14);
       rngNumber.textContent = rng;
       if (storedNumber === "J") {
         storedNumber = 11;
@@ -92,7 +92,7 @@ const game = () => {
 
     const playingL = () => {
       let storedNumber = prevNumber.textContent;
-      rng = Math.floor(Math.random() * 15);
+      rng = Math.ceil(Math.random() * 15);
       rngNumber.textContent = rng;
       if (storedNumber === "J") {
         storedNumber = 11;
